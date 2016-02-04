@@ -5,6 +5,7 @@ function OrganizationGenerator() {
   return {
     date_created: date,
     date_updated: date,
+    desc: '',
     title: 'Test Org' + date
   }
 
