@@ -28,7 +28,12 @@ class UserGenerator {
       firstName: chance.first(),
       lastName: chance.last(),
       password: generatePassword(),
-      username: chance.word() + new Date()
+      username: chance.word() + new Date(),
+      __links: [
+        {
+          organizationId: 1
+        }
+      ]
     }
   }
 
