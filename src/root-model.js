@@ -15,6 +15,12 @@ class RootModel {
     })
   }
 
+  deleteReference(pkg = {}) {
+    return Promise.resolve({
+      deleted: true
+    })
+  }
+
   getAll() {
     return Promise.resolve([])
   }
